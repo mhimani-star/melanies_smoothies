@@ -14,6 +14,6 @@ models:
 
 seeds:
   pharma_project:
-     +schema: dbt_hmeshram
+     +schema: P_TRANSFORMED_SCH
      date_dimension:
       +quote_columns: true
