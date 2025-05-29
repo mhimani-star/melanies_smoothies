@@ -5,7 +5,7 @@ SELECT
   lower(type) AS dosage_form,  -- Normalize for analysis
   lower(category) AS drug_category,
   manufacturer_id,
-  round(cast(price AS numeric), 2) AS price_usd,  -- Round price to 2 decimals
+  round(cast(price AS numeric), 2) AS price_usd,  
   lower(storage_conditions) AS storage_conditions,
 
   expiry_months,
