@@ -2,7 +2,7 @@
     {{ config(
         unique_key='patient_id',
         strategy='check',
-        check_cols=['address', 'phone', 'email', 'emergency_contact', 'emergency_phone']
+        check_cols=['address', 'phone_number', 'email', 'emergency_contact', 'emergency_phone']
     ) }}
 
     SELECT * 
