@@ -1,0 +1,25 @@
+name: pharma_project
+profile: default
+
+target-path: "target"  # directory which will store compiled SQL files
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+
+models:
+  pharma_project:
+    staging:
+      +schema: P_TRANSFORMED_SCH
+      +materialized: table
+
+    marts:
+       +schema: p_analytics_sch
+       core:
+         +materialized: table
+
+seeds:
+  pharma_project:
+     +schema: P_TRANSFORMED_SCH
+     date_dimension:
+      +quote_columns: true
+  
