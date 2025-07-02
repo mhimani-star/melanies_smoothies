@@ -3,7 +3,7 @@ version: 2
 sources:
   - name: pharma
     database: PHARMA_DB
-    schema: P_RAW_SCH  # Raw data schema
+    schema: P_RAW_SCHEMA  # Raw data schema
     tables:
       - name: DOCTORS
       - name: DRUGS

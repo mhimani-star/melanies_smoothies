@@ -1,0 +1,10 @@
+outputs:
+  dev:
+    type: snowflake
+    account: VTICWWU-VMB47439
+    user: mhimani
+    password: Password12345!
+    role: ACCOUNTADMIN   # or another role with access
+    database: PHARMA_DB
+    warehouse: COMPUTE_WH
+    schema: P_TRANSFORMED_SCH  # default schema for dbt models
